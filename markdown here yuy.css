@@ -218,8 +218,9 @@ h6 {
   color: #777;
 }
 
+/* 2017-06-24 删除  更新李笑来的 table
 table {
-  border-collapse: collapse;
+  border-collapse: collapse; 
   border-spacing: 0;
   font-size: .8em;
   border: 0;
@@ -256,3 +257,47 @@ table tr th {
  font-weight: bold;
  background-color: #F0F0F0;
 }
+*/
+
+table {
+  padding: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 1em;
+  font: inherit;
+  border: 0;
+  margin: 0 auto;
+}
+
+tbody {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+table tr {
+  border: 0;
+  border-top: 1px solid #CCC;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+table tr:nth-child(2n) {
+  background-color: #e0e0e0;
+}
+
+table tr th, table tr td {
+  font-size: 16px;
+  border: 1px solid #CCC;
+  margin: 0;
+  padding: 5px 10px;
+}
+
+table tr th {
+  font-weight: bold;
+  color: #eee;
+  border: 1px solid #61c2c0;
+  background-color: #61c2c0;
+}
+
