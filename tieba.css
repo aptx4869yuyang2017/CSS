@@ -1,0 +1,124 @@
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* 页面字体*/
+.markdown-body {
+font-family: "微软雅黑"; /*字体类型*/
+font-size: 16px; /*.字体大小*/
+color:pink; /*字体颜色 粉色*/
+line-height: 1.5; /*每行高度*/
+background-color:#000; /*背景颜色 黑色*/
+margin: 0px;
+padding:20px 36px;
+}
+/*标题1到6*/
+.markdown-body h1 {font-family: "微软雅黑"; color:#d71345;font-size:30px}
+.markdown-body h2 {font-family: "微软雅黑"; color:#f47920;font-size:26px}
+.markdown-body h3 {font-family: "微软雅黑"; color:#ffe600;font-size:22px}
+.markdown-body h4 {font-family: "微软雅黑"; color:#45b97c;font-size:18px}
+.markdown-body h5 {font-family: "微软雅黑"; color:#7bbfea;font-size:14px}
+.markdown-body h6 {font-family: "微软雅黑"; color:#8552a1;font-size:10px}
+/* 超级链接*/
+.markdown-body a:visited{background-color:black;color: blue;font-family: "宋体"}
+.markdown-body a:link {background-color:black; color: blue;font-family: "宋体"} /* 超级链接 被 点过之后 显示的风格 */
+.markdown-body a:hover {background-color:red; color: yellow;font-family: "宋体"}
+/*引用块*/
+.markdown-body blockquote {
+background-color:rgba(255,0,0,0.3);
+color: white; /* 字体 颜色 */
+font-size:16px; /* 字体 大小 */
+border-left: 30px solid rgba(255,0,0,0.3); /* 边框 颜色 */
+margin-left:50px; /* 左边距离 */
+margin-right:600px; /* 右边距离 */
+padding-left: 10px 20px; /* 内部内容 距离边框距离 */
+resize:horizontal; /* 允许横向拉动 */
+overflow:auto;
+}
+
+/*这个引用块的风格,是不是很web了...其他这些其实是为了让大家看的清楚,改什么,有什么变化,而特意采用的各种"土老丑"的颜色...*/
+
+/*这是是使用` `的行内代码块的风格*/
+.markdown-body code {
+/*各种边框属性*/
+background-color: green; /* 背景: 绿色 */
+border: 2px dotted red; /* 边框: 上下左右 点线 2px 红色 */
+border-radius: 10px; /* 边框: 圆角 */
+box-shadow: 5px 5px 1px #888; /* 边框: 阴影 */
+/*各种文字属性*/ 
+color:yellow; /* 黄色 */
+font-size:12px; /* 12px */
+font-family: "黑体"; /* 楷体 */
+white-space: normal;
+/*各种定位属性*/ 
+margin: 0 5px; /*外部边距,左右拉开5px*/
+padding: 0 5px; /*内部内容,左右缩进5px*/
+}
+
+/*这里是使用 每行前面 四个空格 那种代码块的风格*/
+.markdown-body pre {
+background-color: #D2691E; /* 背景:褐色 */
+border: 5px solid blue; /* 边框:蓝色 */
+border-radius: 10px; /* 边框: 圆角 */
+overflow: auto;
+margin: 0;
+padding: 0;
+}
+.markdown-body pre code { 
+/*各种边框属性*/
+background-color: transparent; 
+border: none; 
+border-radius: 0; 
+box-shadow: none; 
+/*各种文字属性*/ 
+color:blue; /* 蓝色 */
+font-size:9px; /* 9px */
+font-family: "楷体"; /* 楷体 */
+white-space: inherit;
+/*各种定位属性*/ 
+margin: 0;
+padding: 0;
+}
+
+/* 这里是使用 ``` ``` 的代码块风格 以及代码高亮*/
+pre.prettyprint {
+background-color:#000; /* 背景: 黑色*/
+border: 1px solid yellow ; /* 边框: 黄色*/
+border-radius: 0; /* 边框: 无圆角 */
+display: block;
+margin: 0;
+padding: 1px 3px;
+}
+
+pre.prettyprint code {
+background-color: transparent; 
+border: none; 
+border-radius: 0; /* 边框: 无圆角 */ 
+box-shadow: none; /* 边框: 无阴影 */ 
+font-size:14px; /* 字体大小 */ 
+font-family: consolas; /* 字体风格 */ 
+white-space: inherit;
+margin: 0;
+padding: 0;
+}
+pre.prettyprint .nocode {color: #FFFF00} /*黄色*/
+pre.prettyprint .str { color: #FFFF00 } /* 黄色 */
+pre.prettyprint .kwd { color: #3399FF; font-weight: 100 } /* 蓝色*/
+pre.prettyprint .com { color: #4C4C4C } /* 绿色 */
+pre.prettyprint .typ { color: #FFFF00} /* 黄色 */
+pre.prettyprint .lit { color: #339900 } /* 绿色 */
+pre.prettyprint .pun { color: #FF00FF;font-size:18px;} /* 粉色*/
+pre.prettyprint .pln { color: #fff } /* 白色 */
+pre.prettyprint .tag { color: red; font-weight: bold } /* 红色 */
+pre.prettyprint .atn { color: red; font-weight: bold } /* 红色 */
+pre.prettyprint .atv { color: red} /* 红色 */
+pre.prettyprint .dec { color: red } /* 红色 */
+
+pre.prettyprint ol.linenums {background-color: transparent;margin: 0;padding:0px;list-style:none;}
+pre.prettyprint li.L0,li.L1,li.L2,li.L3,li.L4,li.L5,li.L6,li.L7,li.L8 ,Li.L9{background: transparent;}
+pre.prettyprint li.L1,li.L3,li.L5,li.L7,li.L9 { background: transparent;}
+pre.prettyprint li:hover{background-color: rgba(255,0,0,0.6); } /* 选中一行时 背景颜色改变 */
+
+/* 要行号 复制下面三段 覆盖上面同样"名字"的三段.
+pre.prettyprint ol.linenums {background-color: transparent;color:green ;margin: 10px; }
+pre.prettyprint li.L0,li.L1,li.L2,li.L3,li.L4,li.L5,li.L6,li.L7,li.L8 ,Li.L9{background: transparent;border-left:1px dashed blue; padding-left:5px; white-space:nowrap }
+pre.prettyprint li.L1,li.L3,li.L5,li.L7,li.L9 { background: transparent;}
+*/
+
